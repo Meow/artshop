@@ -1,111 +1,13 @@
-<!DOCTYPE html>
-<head>
-  <title>Nighty's Art Shop</title>
-  <link rel="stylesheet" href="/style.css">
-  <meta content="#853cb5" name="theme-color">
-  <meta content="Nighty's Art Shop is an up and coming vendor at fandom conventions." name="description">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-</head>
-<body>
-  <header>
-    <div class="logo">Nighty's Art Shop</div>
-    <navigation>
-      <div class="nav_item"><a href="/">Home</a></div>
-      <div class="nav_item"><a href="/artists.html">Artists</a></div>
-      <div class="nav_item"><a href="https://drive.google.com/drive/folders/1Eq605QWCWgKDKSGYuuJ_WRHt0jpHUxwc?usp=sharing">Gallery</a></div>
-      <div class="nav_item"><a href="https://drive.google.com/drive/folders/1ZvWq7qf_vi9ZcUYQ1LzaMIdnsawR1WuN?usp=sharing">Catalogue</a></div>
-    </navigation>
-  </header>
-  <main>
-    <div class="block">
-      <div class="block__header">Who are you?</div>
-      <div class="block__content">
-        <p>Nighty's Art Shop is an up and coming player in the convention merchandise selling space. Taking roots in constantly covering for friend vendors who couldn't for one reason or another show up themselves at conventions, we have now decided to try to sell merchandise on our own with all the experience we've gained from a dozen of times where we were doing it for others.</p>
-        <p>Our origins can be traced back to 2019, when Nighty started helping a friend with selling stuff at conventions which he couldn't attend, in exchange for being allowed to also sell some of her own stuff. During the COVID lockdowns, of course, nothing much happened, but when the conventions started up again in 2022, Nighty was right there to help those friends again, selling stuff for them at Galacon, Eurofurence and other events.</p>
-        <p>A lot of this wouldn't be possible without Nighty's amazing partner, Fletch, who helps around with business at the conventions.</p>
-      </div>
-    </div>
-    <div class="block">
-      <div class="block__header">What stuff do you sell?</div>
-      <div class="block__content">
-        <p>We sell prints, button pins, enamel pins and stickers primarily. We may have other miscellaneous items in stock depending on the circumstances or the exact convention we go to, such as fursuit premades, fursuit parts, food spices, T-Shirts or body pillow covers (dakimakuras). Nighty also sometimes offers sketch art commissions at the table.</p>
-        <p>As a new and growing vendor, we're constantly looking to expand our portfolio to include more variety of items offered. We're always on the lookout for new artists to partner up with! If you would like us to sell your artwork, don't hesitate to contact Nighty via Telegram - @Nighty_Cloud.</p>
-      </div>
-    </div>
-    <div class="block">
-      <div class="block__header">What sets you apart?</div>
-      <div class="block__content">
-        <p>Our excellent quality and wide selection of artwork made by very talented artists, of course! We partner up with many popular artists in the community to bring you the best products possible. Click the link at the top of the page to learn who we partner with!</p>
-        <p>We also have a fairly unique business model. We stock up the inventory to handle the initial rush hour, and everything else is manufactured on-demand directly at the convention. There's no such thing as out-of-stock prints, pins or stickers at our table!</p>
-        <p>There are, of course, other items which we can't simply manufacture at the convention, such as enamel pins, but those we simply keep a much larger stock of.</p>
-        <p>We keep in touch every client who orders their print on-demand, and if they for any reason are unable to pick up their print within sales hours, we will arrange pickup outside of those at a pre-agreed location. You will always get your order, even if we have to ship it to you via mail!</p>
-      </div>
-    </div>
-    <div class="block">
-      <div class="block__header">What artists do you work with?</div>
-      <div class="block__content">
-        <p>We partner up with many amazing, talented artists from the community. <a href="/artists.html">Click here to view the list of all artists we partner up with.</a></p>
-      </div>
-    </div>
-  </main>
-  <script type="text/javascript">
-    // Linear interpolation.
-    function lerp(delta, from, to) {
-      if (delta >= 1)
-        return to;
-      else if (delta <= 0)
-        return from;
-
-      return from + (to - from) * delta;
-    }
-
-    // Initialize parallax on element `node`.
-    function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
-      if (!node) return;
-
-      const parent = node.parentElement;
-
-      if (!parent) return;
-
-      // Not very convenient to implement this functionally. We keep a copy
-      // of these variables so we can do float math on them.
-      let targetLeft = parent.scrollWidth * 0.5 - node.scrollWidth * 0.5;
-      let targetTop = parent.scrollHeight * 0.5 - node.scrollHeight * 0.5;
-      let currentLeft = targetLeft;
-      let currentTop = targetTop;
-
-      // Setup the node for parallax and position it correctly.
-      node.style.margin = "0";
-      node.style.transform = `translate(${targetLeft}px, ${targetTop}px)`;
-
-      // Create an updater function that calculates the desired parallax position.
-      const listenerFunc = (x, y) => {
-        targetLeft = ((parent.scrollWidth * 0.5 - node.scrollWidth * 0.5) + (parent.scrollWidth * 0.1 * ((window.innerWidth - x) / window.innerWidth - 0.5))) * multiplier;
-        targetTop = ((parent.scrollHeight * 0.5 - node.scrollHeight * 0.5) + (parent.scrollHeight * 0.4 * ((window.innerHeight - y) / window.innerHeight - 0.5))) * multiplier;
-      }
-
-      // Add event listeners for potential user input movement (mouse, touch).
-      document.addEventListener("mousemove", (e) => { listenerFunc(e.pageX, e.pageY); });
-      document.addEventListener("touchstart", (e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); });
-      document.addEventListener("touchmove", (e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); });
-
-      // Update actual node offsets.
-      const updaterFunc = () => {
-        if (constrain != "vertical")
-          currentLeft = lerp(delta, currentLeft, targetLeft);
-
-        if (constrain != "horizontal")
-          currentTop = lerp(delta, currentTop, targetTop);
-
-        node.style.transform = `translate(${currentLeft}px, ${currentTop}px)`;
-
-        window.requestAnimationFrame(updaterFunc);
-      };
-
-      updaterFunc();
-
-      return node;
-    }
-  </script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
