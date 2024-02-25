@@ -8,17 +8,19 @@ export default createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-  },
-  {
-    path: "/artists",
-    element: <Artists />,
-  },
-  {
-    path: "/catalogue",
-    element: <Catalogue />,
-  },
-  {
-    path: "/gallery",
-    element: <Gallery />,
+    children: [
+      {
+        path: "/artists",
+        element: <Artists />,
+      },
+      {
+        path: "/catalogue",
+        element: <Catalogue />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+    ]
   },
 ]);
