@@ -1,10 +1,9 @@
-import Artist from "./components/artist";
+import Artist from "./artist";
 
-export default function Artists() {
+export default function CatalogueMlpSFW() {
   return (
     <div className="artists">
-      <span>We work with many wonderful artists to bring you only the best stuff at conventions. Here are just some of the furry artists we work with!</span>
-      <span className="disclaimer">(Many more artists available in the full catalogue, as well as many more arts from these artists)</span>
+      <h2>NSFW Pony Prints</h2>
       <Artist name={"Hioshiru"} folder={"furry/hioshiru"} filekey={"hsf"} keymax={21} />
       <Artist name={"Airfly-Pony"} folder={"furry/airfly-pony"} filekey={"asf"} keymax={10} />
       <Artist name={"PunkPega"} folder={"furry/punkpega"} filekey={"psf"} keymax={18} extension={"jpg"} />

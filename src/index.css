@@ -5,6 +5,7 @@
   --padding-large: 1.5rem;
 
   --background-color: #1f171f;
+  --background-danger-color: #2b0d0d;
   --border-color: #462746;
   --link-hover-color: #b869b8;
   --text-color: #d0d0d0;
@@ -18,6 +19,7 @@
   --image-height: 600px;
   --avatar-width: 64px;
   --page-width: 1280px;
+  --subnav-height: 48px;
 }
 
 html {
@@ -39,28 +41,29 @@ main {
   margin: auto;
 }
 
-navigation {
+.navigation {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: var(--padding-large);
 }
 
-navigation > .subnav {
+.navigation > .subnav {
   display: flex;
   gap: var(--padding-normal);
   background-color: var(--border-color);
   justify-content: center;
+  line-height: var(--subnav-height);
 }
 
-navigation > .subnav a {
+.navigation > .subnav a {
   color: var(--text-color);
   padding: var(--padding-small);
   font-size: var(--navlink-size);
   text-decoration: none;
 }
 
-navigation > .subnav a:hover {
+.navigation > .subnav a:hover {
   color: var(--link-hover-color);
 }
 
@@ -105,28 +108,34 @@ navigation > .subnav a:hover {
   scrollbar-width: none;
 }
 
-.artist__gallery__overlay--right {
-  display: block;
+.artist__gallery__overlay {
   position: absolute;
-  width: 400px;
+  width: 250px;
   height: var(--image-height);
-  left: calc(100% - 400px);
-  transform: translateY(calc(0px - var(--image-height)));
-  background: linear-gradient(to right, #00000000, var(--background-color));
   font-size: 8rem;
-  text-align: right;
   line-height: var(--image-height);
 }
 
-.artist__gallery__overlay--left {
-  display: block;
-  position: absolute;
-  transform: translateY(calc(0px - var(--image-height)));
-  width: 400px;
-  height: var(--image-height);
-  background: linear-gradient(to right, var(--background-color), #00000000);
+.artist__gallery__overlay > button {
+  color: var(--text-color);
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
   font-size: 8rem;
-  line-height: var(--image-height);
+}
+
+.artist__gallery__overlay--right {
+  left: calc(100% - 250px);
+  transform: translateY(calc(0px - var(--image-height)));
+  background: linear-gradient(to right, #00000000, var(--background-color));
+  text-align: right;
+}
+
+.artist__gallery__overlay--left {
+  transform: translateY(calc(0px - var(--image-height)));
+  background: linear-gradient(to right, var(--background-color), #00000000);
 }
 
 .overlay_container {
@@ -144,5 +153,50 @@ navigation > .subnav a:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.nsfw_warning {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  background: var(--background-danger-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.nsfw_warning__buttons {
+  display: flex;
+  align-self: center;
+  gap: var(--padding-large);
+}
+
+.nsfw_warning__buttons > button {
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.nsfw_warning__buttons > button:hover {
+  color: var(--link-hover-color);
+  cursor: pointer;
+}
+
+.nsfw_warning__buttons > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.nsfw_warning__buttons > a:hover {
+  color: var(--link-hover-color);
+  cursor: pointer;
 }
