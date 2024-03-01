@@ -4,12 +4,13 @@ export default function CatalogueFurryNSFW() {
   return (
     <div className="artists">
       <h2>NSFW Furry Prints</h2>
-      <Artist name={"Hioshiru"} folder={"furry/hioshiru"} filekey={"hsf"} keymax={21} showid={true} />
-      <Artist name={"Airfly-Pony"} folder={"furry/airfly-pony"} filekey={"asf"} keymax={10} showid={true} />
-      <Artist name={"PunkPega"} folder={"furry/punkpega"} filekey={"psf"} keymax={18} extension={"jpg"} showid={true} />
-      <Artist name={"Lightly-San"} folder={"furry/lighty"} filekey={"lsf"} keymax={4} showid={true} />
-      <Artist name={"Twiren"} folder={"furry/twiren"} filekey={"tsf"} keymax={2} showid={true} />
-      <Artist name={"Hority"} folder={"furry/hority"} filekey={"hosf"} keymax={5} showid={true} />
+      <Artist name={"Hioshiru"} folder={"nsfw/hioshiru"} filekey={"hnf"} keymax={56} showid={true} />
+      <Artist name={"Airfly-Pony"} folder={"nsfw/airfly-pony"} filekey={"anf"} keymax={10} showid={true} />
+      <Artist name={"Hority"} folder={"nsfw/hority"} filekey={"honf"} keymax={5} showid={true} />
+      <Artist name={"Lightly-San"} folder={"nsfw/lightly"} filekey={"lnf"} keymax={8} showid={true} />
+      <Artist name={"PunkPega"} folder={"nsfw/punkpega"} filekey={"pnf"} keymax={13} extension={"jpg"} showid={true} />
+      <Artist name={"Twiren"} folder={"nsfw/twiren"} filekey={"tnf"} keymax={12} showid={true} />
+      <Artist name={"Vistamage"} folder={"nsfw/vistamage"} filekey={"vnf"} keymax={3} showid={true} />
     </div>
   );
 }

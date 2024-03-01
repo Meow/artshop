@@ -7,12 +7,12 @@ export default function Root() {
   return (
     <>
       <div className="navigation">
-        <h1>Nighty's Art Shop</h1>
+        <h1><a href="/">Nighty's Art Shop</a></h1>
         <div className="subnav">
           <a href="/artists">Our Artists</a>
           <a href="/catalogue">Stuff We Sell</a>
-          <a href="/gallery">Gallery</a>
           <a href="/about">About Us</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
       <main>

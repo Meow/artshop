@@ -4,6 +4,7 @@ import Artists from "./routes/artists";
 import Catalogue from "./routes/catalogue";
 import Gallery from "./routes/gallery";
 import About from "./routes/about";
+import Contact from "./routes/contact";
 
 export default createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export default createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/contact",
+        element: <Contact />
+      }
     ]
   },
 ]);

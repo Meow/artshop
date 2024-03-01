@@ -1,4 +1,4 @@
-export default function CatalogueFurryNSFW() {
+export default function NsfwWarning() {
   return (
     <div className="nsfw_warning" id="nsfwwarning">
       <h1>You are about to view adult content!</h1>
@@ -9,7 +9,7 @@ export default function CatalogueFurryNSFW() {
         <a href="/catalogue">‹ Go back</a>
         <button onClick={
           () => {
-            document.cookie = "nsfw=1";
+            localStorage.setItem('nsfw_allowed', 'yes');
             let el = document.getElementById('nsfwwarning');
             if (el) { el.classList.add('hidden'); }
           }

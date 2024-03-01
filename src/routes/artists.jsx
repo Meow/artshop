@@ -1,4 +1,5 @@
 import Artist from "./components/artist";
+import ArtistAvatar from "./components/artist_avatar";
 
 export default function Artists() {
   return (
@@ -11,6 +12,13 @@ export default function Artists() {
       <Artist name={"Lightly-San"} folder={"furry/lighty"} filekey={"lsf"} keymax={4} />
       <Artist name={"Twiren"} folder={"furry/twiren"} filekey={"tsf"} keymax={2} />
       <Artist name={"Hority"} folder={"furry/hority"} filekey={"hosf"} keymax={5} />
+      <p><strong>...and many more!</strong> Visit <a href="/catalogue">our catalogue</a> to see the wonderful creations from many more artists, such as:</p>
+      <div className="artists__other">
+        <ArtistAvatar name={"JedaySkayVoker"} artistid="jedayskayvoker" />
+        <ArtistAvatar name={"Yakovlev-Vad"} artistid="yakovlev-vad" />
+        <ArtistAvatar name={"Setharu"} artistid="setharu" />
+        <ArtistAvatar name={"Vistamage"} artistid="vistamage" />
+      </div>
     </div>
   );
 }
