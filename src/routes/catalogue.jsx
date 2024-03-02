@@ -3,6 +3,7 @@ import CatalogueFurryNSFW from './components/catalogue_furry_nsfw';
 import CatalogueMlpSFW from './components/catalogue_mlp_sfw';
 import CatalogueMlpNSFW from './components/catalogue_mlp_nsfw';
 import NsfwWarning from './components/nsfw_warning';
+import { Link } from "react-router-dom";
 
 export default function Catalogue({pony, nsfw}) {
   const renderSelected = () => {
@@ -33,10 +34,10 @@ export default function Catalogue({pony, nsfw}) {
       <br />
       <strong>Categories:</strong>
       <div className="catalogue__navigation">
-        <a href="/catalogue">Furry Prints</a>
-        <a href="/catalogue/pony">Pony Prints</a>
-        <a href="/catalogue/nsfw">Furry Prints (NSFW, 18+)</a>
-        <a href="/catalogue/ponynsfw">Pony Prints (NSFW, 18+)</a>
+        <Link to="/catalogue">Furry Prints</Link>
+        <Link to="/catalogue/pony">Pony Prints</Link>
+        <Link to="/catalogue/nsfw">Furry Prints (NSFW, 18+)</Link>
+        <Link to="/catalogue/ponynsfw">Pony Prints (NSFW, 18+)</Link>
       </div>
       {renderNsfwWarning()}
       {renderSelected()}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NsfwWarning() {
   return (
     <div className="nsfw_warning" id="nsfwwarning">
@@ -6,7 +8,7 @@ export default function NsfwWarning() {
       <span>By pressing the 'Proceed' button you certify that you are legally allowed to view adult (pornographic, erotic) content in your country/jurisdiction, and are at least 18 years of age.</span>
       <br />
       <div className="nsfw_warning__buttons">
-        <a href="/catalogue">‹ Go back</a>
+        <Link to="/catalogue">‹ Go back</Link>
         <button onClick={
           () => {
             localStorage.setItem('nsfw_allowed', 'yes');

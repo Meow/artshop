@@ -82,10 +82,13 @@ a:hover {
 .disclaimer {
   color: var(--text-muted-color);
   display: block;
+  font-size: 1.2rem;
+  margin: var(--padding-normal);
 }
 
 .artists > span {
   display: block;
+  text-align: center;
 }
 
 .artists a {
@@ -300,4 +303,10 @@ a:hover {
   .hidden--mobile {
     display: none !important;
   }
+}
+
+.landing > img {
+  width: 100%;
+  height: auto;
+  object-position: 0 -14vh;
 }
