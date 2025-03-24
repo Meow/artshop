@@ -1,4 +1,4 @@
-import { useOutlet, Link } from "react-router-dom";
+import { useOutlet, Link } from 'react-router';
 import LandingPage from './landing';
 
 export default function Root() {
@@ -7,7 +7,9 @@ export default function Root() {
   return (
     <>
       <div className="navigation">
-        <h1><Link to="/">Nighty's Art Shop</Link></h1>
+        <h1>
+          <Link to="/">Nighty's Art Shop</Link>
+        </h1>
         <div className="subnav">
           <Link to="/artists">Our Artists</Link>
           <Link to="/catalogue">Catalogue</Link>
@@ -15,9 +17,7 @@ export default function Root() {
           <Link to="/contact">Contact</Link>
         </div>
       </div>
-      <main>
-        {outlet || <LandingPage />}
-      </main>
+      <main>{outlet || <LandingPage />}</main>
     </>
   );
 }
