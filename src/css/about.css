@@ -1,0 +1,21 @@
+.about__person {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: var(--padding-normal);
+}
+
+.about__person {
+  font-size: 1.2em;
+}
+
+.about__title {
+  font-size: 1.2em;
+}
+
+.about__artist_list {
+  display: flex;
+  gap: var(--padding-normal);
+  padding: var(--padding-normal) 0;
+  flex-wrap: wrap;
+}

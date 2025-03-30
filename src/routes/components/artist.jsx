@@ -76,7 +76,7 @@ export default function Artist({ name, folder, filekey, keymax, extension, showi
         {[...Array(keymax)].map((_, i) => (
           <div key={i} className="artist__gallery__media">
             <img
-              src={`https://data.nighty.cloud/artshop/${folder}/${filekey}_${i + 1}.${extension || 'png'}`}
+              src={`https://data.nighty.cloud/artshop/${folder}/${filekey}_${i + 1}.${extension || 'jpg'}`}
               alt={`Art ID ${filekey}_${i + 1}`}
             />
             <div className={`artist__gallery__badge ${showid ? '' : 'hidden'}`}>

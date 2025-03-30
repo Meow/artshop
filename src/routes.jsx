@@ -4,6 +4,9 @@ import Catalogue from './routes/catalogue';
 import Gallery from './routes/gallery';
 import About from './routes/about';
 import Contact from './routes/contact';
+import Pins from './routes/pins';
+import Stickers from './routes/stickers';
+import Other from './routes/other';
 
 export const routes = [
   {
@@ -29,6 +32,26 @@ export const routes = [
       {
         path: '/catalogue/ponynsfw',
         element: <Catalogue pony={true} nsfw={true} />,
+      },
+      {
+        path: '/catalogue/pins',
+        element: <Pins />,
+      },
+      {
+        path: '/catalogue/pins/pony',
+        element: <Pins pony={true} />,
+      },
+      {
+        path: '/catalogue/stickers',
+        element: <Stickers />,
+      },
+      {
+        path: '/catalogue/stickers/pony',
+        element: <Stickers pony={true} />,
+      },
+      {
+        path: '/catalogue/other',
+        element: <Other />,
       },
       {
         path: '/gallery',

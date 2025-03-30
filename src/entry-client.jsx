@@ -1,4 +1,4 @@
-import './index.css';
+import './css/application.css';
 import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
 import { createBrowserRouter, matchRoutes } from 'react-router';

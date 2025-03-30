@@ -1,0 +1,120 @@
+.artists > span {
+  display: block;
+  text-align: center;
+}
+
+.artists a {
+  text-decoration: none;
+  color: var(--link-hover-color);
+}
+
+.artist {
+  padding: var(--padding-large) 0;
+}
+
+.artist__title {
+  display: grid;
+  grid-template-columns: var(--avatar-width) auto;
+  line-height: var(--avatar-width);
+  gap: var(--padding-normal);
+  margin-bottom: var(--padding-normal);
+}
+
+.artist__title--column {
+  display: grid;
+  grid-template-rows: var(--avatar-width) auto;
+  gap: var(--padding-normal);
+  margin-bottom: var(--padding-normal);
+  font-size: var(--title-size);
+  text-align: center;
+  width: fit-content;
+}
+
+.artist__title--column > .artist__avatar {
+  margin: auto;
+}
+
+.artist__title > span {
+  font-size: var(--title-size);
+}
+
+.artist__avatar {
+  width: var(--avatar-width);
+  height: var(--avatar-width);
+  border-radius: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.artists__other {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  gap: var(--padding-large);
+}
+
+.artist__gallery {
+  display: flex;
+  gap: var(--padding-normal);
+  max-width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.artist__gallery__overlay {
+  position: absolute;
+  width: 250px;
+  height: var(--image-height);
+  font-size: 8rem;
+  line-height: var(--image-height);
+}
+
+.artist__gallery__overlay > button {
+  color: var(--text-color);
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 8rem;
+}
+
+.artist__gallery__overlay--right {
+  left: calc(100% - 250px);
+  transform: translateY(calc(0px - var(--image-height)));
+  background: linear-gradient(to right, #00000000, var(--background-color));
+  text-align: right;
+}
+
+.artist__gallery__overlay--left {
+  transform: translateY(calc(0px - var(--image-height)));
+  background: linear-gradient(to right, var(--background-color), #00000000);
+}
+
+.artist__gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.artist__gallery__media {
+  max-height: var(--image-height);
+}
+
+.artist__gallery__media > img {
+  display: flex;
+  flex: 1 0 auto;
+  width: auto;
+  max-height: var(--image-height);
+}
+
+.artist__gallery__badge {
+  position: relative;
+  left: calc(50% - 32px - var(--padding-normal) / 2);
+  bottom: calc(var(--image-height) + var(--padding-small));
+  line-height: var(--badge-height);
+  width: fit-content;
+  background: var(--background-color);
+  padding: 0 var(--padding-normal);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}

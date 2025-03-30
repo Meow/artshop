@@ -1,0 +1,28 @@
+:root {
+  --padding-tiny: 0.3rem;
+  --padding-small: 0.4rem;
+  --padding-normal: 0.75rem;
+  --padding-large: 1.5rem;
+
+  --background-color: #1f171f;
+  --background-danger-color: #2b0d0d;
+  --border-color: #462746;
+  --border-muted-color: #361f36;
+  --link-hover-color: #b869b8;
+  --text-color: #d0d0d0;
+  --text-muted-color: #848484;
+
+  --navlink-size: 1.1rem;
+  --title-size: 1.5rem;
+  --border-radius: 0.5rem;
+
+  --image-width: 200px;
+  --image-height: 400px;
+  --image-full-width: 500px;
+  --image-full-height: 800px;
+  --avatar-width: 64px;
+  --page-width: 1280px;
+  --subnav-height: 48px;
+  --badge-height: 32px;
+  --button-height: 32px;
+}

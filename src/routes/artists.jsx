@@ -4,6 +4,7 @@ export default function Artists() {
   return (
     <div className="artists">
       <span>
+        <h3>We constantly seek new artists to work with!</h3>
         We work with many wonderful artists to bring you only the best stuff at conventions. Here are just some of the
         furry artists we work with!
       </span>
