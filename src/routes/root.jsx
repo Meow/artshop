@@ -11,7 +11,7 @@ export default function Root() {
       return (
         <div className="secondary_nav">
           <Link to="/catalogue">Prints</Link>
-          <Link to="/catalogue/pins">Buttons & Pins</Link>
+          <Link to="/catalogue/pins">Buttons/Pins</Link>
           <Link to="/catalogue/stickers">Stickers</Link>
           <Link to="/catalogue/other">Other Stuff</Link>
         </div>
