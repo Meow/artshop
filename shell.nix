@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 pkgs.mkShell {
    buildInputs = with pkgs; [
-    nodejs_22
+    nodejs_24
     nodePackages.npm
    ];       
 }

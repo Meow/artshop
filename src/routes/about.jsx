@@ -38,6 +38,7 @@ export default function About() {
         <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/punkpega.png`} />
         <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/setharu.png`} />
         <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/twiren.png`} />
+        <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/upiter.png`} />
         <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/vistamage.png`} />
         <img className="artist__avatar" src={`https://data.nighty.cloud/artshop/avatars/yakovlev-vad.png`} />
       </div>

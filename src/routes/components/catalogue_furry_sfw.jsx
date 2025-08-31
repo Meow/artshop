@@ -4,12 +4,15 @@ export default function CatalogueFurrySFW() {
   return (
     <div className="artists">
       <h2>Furry Prints</h2>
-      <Artist name={'Hioshiru'} folder={'furry/hioshiru'} filekey={'hsf'} keymax={21} showid={true} />
-      <Artist name={'Airfly-Pony'} folder={'furry/airfly-pony'} filekey={'asf'} keymax={10} showid={true} />
-      <Artist name={'PunkPega'} folder={'furry/punkpega'} filekey={'psf'} keymax={18} extension={'jpg'} showid={true} />
-      <Artist name={'Lightly-San'} folder={'furry/lighty'} filekey={'lsf'} keymax={4} showid={true} />
-      <Artist name={'Twiren'} folder={'furry/twiren'} filekey={'tsf'} keymax={2} showid={true} />
-      <Artist name={'Hority'} folder={'furry/hority'} filekey={'hosf'} keymax={5} showid={true} />
+      <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={47} showid={true} />
+      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={37} showid={true} />
+      <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} showid={true} />
+      <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} showid={true} />
+      <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} showid={true} />
+      <Artist name={'Upiter'} artistid={'upiter'} filekey={'usf'} keymax={4} showid={true} />
+      <Artist name={'Twiren'} artistid={'twiren'} filekey={'tsf'} keymax={2} showid={true} />
+      <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} showid={true} />
+      <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} showid={true} />
     </div>
   );
 }

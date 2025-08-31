@@ -11,18 +11,20 @@ export default function Artists() {
       <span className="disclaimer">
         (Many more artists available in the full catalogue, as well as many more arts from these artists)
       </span>
-      <Artist name={'Hioshiru'} folder={'furry/hioshiru'} filekey={'hsf'} keymax={21} />
-      <Artist name={'Airfly-Pony'} folder={'furry/airfly-pony'} filekey={'asf'} keymax={10} />
-      <Artist name={'PunkPega'} folder={'furry/punkpega'} filekey={'psf'} keymax={18} extension={'jpg'} />
-      <Artist name={'Lightly-San'} folder={'furry/lighty'} filekey={'lsf'} keymax={4} />
-      <Artist name={'Twiren'} folder={'furry/twiren'} filekey={'tsf'} keymax={2} />
-      <Artist name={'Hority'} folder={'furry/hority'} filekey={'hosf'} keymax={5} />
+      <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={47} />
+      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={37} />
+      <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} />
+      <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} />
+      <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} />
+      <Artist name={'Upiter'} artistid={'upiter'} filekey={'usf'} keymax={4} />
+      <Artist name={'Twiren'} artistid={'twiren'} filekey={'tsf'} keymax={2} />
+      <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} />
+      <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} />
       <p>
         <h2>Pony-only artists (not present at furry conventions):</h2>
       </p>
-      <Artist name={'JedaySkayVoker'} folder={'pony/jedayskayvoker'} filekey={'jsp'} keymax={13} />
-      <Artist name={'Yakovlev-Vad'} folder={'pony/yakovlev-vad'} filekey={'ysp'} keymax={68} />
-      <Artist name={'Setharu'} folder={'pony/setharu'} filekey={'ssp'} keymax={14} />
+      <Artist name={'JedaySkayVoker'} artistid={'jedayskayvoker'} filekey={'jsp'} keymax={13} />
+      <Artist name={'Setharu'} artistid={'setharu'} filekey={'ssp'} keymax={14} />
     </div>
   );
 }
