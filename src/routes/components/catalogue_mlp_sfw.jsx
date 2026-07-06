@@ -11,13 +11,7 @@ export default function CatalogueMlpSFW() {
       <Artist name={'Setharu'} artistid={'setharu'} filekey={'ssp'} keymax={14} showid={true} />
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asp'} keymax={4} showid={true} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsp'} keymax={4} showid={true} />
-      <Artist
-        name={'PunkPega'}
-        artistid={'punkpegasus'}
-        filekey={'psp'}
-        keymax={6}
-        showid={true}
-      />
+      <Artist name={'PunkPega'} artistid={'punkpegasus'} filekey={'psp'} keymax={6} showid={true} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsp'} keymax={3} showid={true} />
     </div>
   );
