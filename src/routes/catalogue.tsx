@@ -5,7 +5,12 @@ import CatalogueMlpNSFW from './components/catalogue_mlp_nsfw';
 import NsfwWarning from './components/nsfw_warning';
 import { Link } from 'react-router';
 
-export default function Catalogue({ pony, nsfw }) {
+interface CatalogueProps {
+  pony?: boolean;
+  nsfw?: boolean;
+}
+
+export default function Catalogue({ pony, nsfw }: CatalogueProps) {
   const renderSelected = () => {
     if (pony)
       if (nsfw) return <CatalogueMlpNSFW />;

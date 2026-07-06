@@ -1,4 +1,4 @@
-export default function Pins() {
+export default function Pins(_props: { pony?: boolean }) {
   return (
     <div className="catalogue">
       <h1>Pins</h1>

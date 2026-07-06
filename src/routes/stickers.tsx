@@ -1,4 +1,4 @@
-export default function Stickers() {
+export default function Stickers(_props: { pony?: boolean }) {
   return (
     <div className="catalogue">
       <h1>Stickers</h1>

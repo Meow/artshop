@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export default function Artist({ name, artistid, filekey, keymax, extension, showid }) {
+interface ArtistProps {
+  name: string;
+  artistid: string;
+  filekey: string;
+  keymax: number;
+  extension?: string;
+  showid?: boolean;
+}
+
+// The gallery element stashes its scroll target on a custom property.
+interface ScrollableGallery extends HTMLElement {
+  targetleft: number;
+}
+
+export default function Artist({ name, artistid, filekey, keymax, extension, showid }: ArtistProps) {
   const [scrolling, setScrolling] = useState(false);
   const [scrollState, setScrollState] = useState(1);
 
-  const handleScroll = dir => {
+  const handleScroll = (dir: number) => {
     if (scrolling) return;
 
     setScrolling(true);
@@ -17,7 +31,8 @@ export default function Artist({ name, artistid, filekey, keymax, extension, sho
       scrollFactor = window.screen.width > 1280 ? 1280 : window.screen.width * 1.4;
     }
 
-    let el = document.getElementById(artistid);
+    const el = document.getElementById(artistid) as ScrollableGallery | null;
+    if (!el) return;
     el.targetleft = el.scrollLeft + scrollFactor * 0.75 * dir;
 
     if (el.targetleft <= 0) {

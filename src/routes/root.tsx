@@ -3,10 +3,9 @@ import LandingPage from './landing';
 
 export default function Root() {
   const outlet = useOutlet();
+  const loc = useLocation();
 
   const renderSecondaryNav = () => {
-    const loc = useLocation();
-
     if (loc.pathname.includes('catalogue'))
       return (
         <div className="secondary_nav">

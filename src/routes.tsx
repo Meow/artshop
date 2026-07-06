@@ -7,8 +7,9 @@ import Contact from './routes/contact';
 import Pins from './routes/pins';
 import Stickers from './routes/stickers';
 import Other from './routes/other';
+import type { RouteObject } from 'react-router';
 
-export const routes = [
+export const routes: RouteObject[] = [
   {
     path: '/',
     element: <Root />,

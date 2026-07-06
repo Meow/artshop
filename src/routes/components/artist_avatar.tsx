@@ -1,4 +1,9 @@
-export default function ArtistAvatar({ name, artistid }) {
+interface ArtistAvatarProps {
+  name: string;
+  artistid: string;
+}
+
+export default function ArtistAvatar({ name, artistid }: ArtistAvatarProps) {
   return (
     <div className="artist">
       <div className="artist__title--column">

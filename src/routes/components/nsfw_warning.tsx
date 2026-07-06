@@ -18,7 +18,7 @@ export default function NsfwWarning() {
         <button
           onClick={() => {
             localStorage.setItem('nsfw_allowed', 'yes');
-            let el = document.getElementById('nsfwwarning');
+            const el = document.getElementById('nsfwwarning');
             if (el) {
               el.classList.add('hidden');
             }
