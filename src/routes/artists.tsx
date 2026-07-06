@@ -20,9 +20,7 @@ export default function Artists() {
       <Artist name={'Twiren'} artistid={'twiren'} filekey={'tsf'} keymax={2} />
       <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} />
-      <p>
-        <h2>Pony-only artists (not present at furry conventions):</h2>
-      </p>
+      <h2>Pony-only artists (not present at furry conventions):</h2>
       <Artist name={'JedaySkayVoker'} artistid={'jedayskayvoker'} filekey={'jsp'} keymax={13} />
       <Artist name={'Setharu'} artistid={'setharu'} filekey={'ssp'} keymax={14} />
     </div>

@@ -1,28 +1,31 @@
 :root {
   --padding-tiny: 0.3rem;
-  --padding-small: 0.4rem;
-  --padding-normal: 0.75rem;
-  --padding-large: 1.5rem;
+  --padding-small: 0.5rem;
+  --padding-normal: 0.85rem;
+  --padding-large: 1.6rem;
+  --padding-huge: 3rem;
 
-  --background-color: #1f171f;
-  --background-danger-color: #2b0d0d;
-  --border-color: #462746;
-  --border-muted-color: #361f36;
-  --link-hover-color: #b869b8;
-  --text-color: #d0d0d0;
-  --text-muted-color: #848484;
-
-  --navlink-size: 1.1rem;
+  --navlink-size: 1rem;
   --title-size: 1.5rem;
-  --border-radius: 0.5rem;
+
+  --border-radius: 0.6rem;
+  --border-radius-large: 1rem;
+  --border-radius-pill: 999px;
+
+  --content-shadow: 0 1px 2px var(--shadow-color);
+  --raised-shadow: 0 6px 20px -8px var(--shadow-color);
+  --lifted-shadow: 0 14px 34px -12px var(--shadow-color), 0 0 0 1px var(--border-color);
+
+  --transition-fast: 120ms ease;
+  --transition-normal: 200ms ease;
 
   --image-width: 200px;
   --image-height: 400px;
   --image-full-width: 500px;
   --image-full-height: 800px;
   --avatar-width: 64px;
-  --page-width: 1280px;
-  --subnav-height: 48px;
+  --page-width: 1180px;
+  --subnav-height: 52px;
   --badge-height: 32px;
-  --button-height: 32px;
+  --button-height: 40px;
 }

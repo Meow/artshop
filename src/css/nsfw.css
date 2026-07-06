@@ -4,49 +4,89 @@
   z-index: 9999;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  gap: var(--padding-normal);
   left: 0;
   bottom: 0;
-  background: var(--background-danger-color);
+  padding: var(--padding-huge);
+  background:
+    radial-gradient(60rem 40rem at 50% 30%, var(--background-danger-color), transparent 70%), var(--background-color);
   width: 100vw;
   height: 100vh;
+}
+
+.nsfw_warning > h1 {
+  color: var(--heading-color);
+}
+
+.nsfw_warning > span {
+  max-width: 60ch;
+  color: var(--text-color);
 }
 
 .nsfw_warning__buttons {
   display: flex;
   align-self: center;
   gap: var(--padding-large);
+  margin-top: var(--padding-normal);
+}
+
+.nsfw_warning__buttons > button,
+.nsfw_warning__buttons > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+  padding: var(--padding-small) var(--padding-large);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-pill);
+  background: var(--surface-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.nsfw_warning__buttons > button:hover,
+.nsfw_warning__buttons > a:hover {
+  color: var(--heading-color);
+  background: var(--surface-hover-color);
+  border-color: var(--border-strong-color);
+  transform: translateY(-2px);
 }
 
 .nsfw_warning__buttons > button {
-  background: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1.25rem;
-  color: var(--text-color);
+  border-color: var(--border-strong-color);
+  background: color-mix(in srgb, var(--link-hover-color) 22%, var(--surface-color));
+  color: var(--heading-color);
 }
 
 .nsfw_warning__buttons > button:hover {
-  color: var(--link-hover-color);
-  cursor: pointer;
-}
-
-.nsfw_warning__buttons > a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
-
-.nsfw_warning__buttons > a:hover {
-  color: var(--link-hover-color);
-  cursor: pointer;
+  background: color-mix(in srgb, var(--link-hover-color) 34%, var(--surface-color));
+  box-shadow: 0 0 20px var(--accent-glow-color);
 }
 
 @media (max-width: 600px) {
   .nsfw_warning {
-    padding: var(--padding-normal);
-    width: calc(100vw - var(--padding-normal) * 2);
-    height: calc(100vh - var(--padding-normal) * 2);
+    padding: var(--padding-large);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nsfw_warning__buttons {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .nsfw_warning__buttons > button,
+  .nsfw_warning__buttons > a {
+    justify-content: center;
   }
 }

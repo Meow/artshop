@@ -1,3 +1,5 @@
+import { LightboxImage } from './components/lightbox';
+
 export default function Pins(_props: { pony?: boolean }) {
   return (
     <div className="catalogue">
@@ -12,11 +14,21 @@ export default function Pins(_props: { pony?: boolean }) {
       <h4>Enamel pin examples</h4>
       <div className="catalogue__gallery">
         <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/pins/hio_enfields.jpg"></img>
+          <LightboxImage
+            src="https://data.nighty.cloud/artshop/pins/hio_enfields.jpg"
+            alt="Enfields enamel pins (design by hioshiru)"
+            caption="Enfields (design by hioshiru)"
+            loading="lazy"
+          />
           <span>Enfields (design by hioshiru)</span>
         </div>
         <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/pins/hio_dragons.jpg"></img>
+          <LightboxImage
+            src="https://data.nighty.cloud/artshop/pins/hio_dragons.jpg"
+            alt="Dragons enamel pins (design by hioshiru)"
+            caption="Dragons (design by hioshiru)"
+            loading="lazy"
+          />
           <span>Dragons (design by hioshiru)</span>
         </div>
       </div>
@@ -35,7 +47,12 @@ export default function Pins(_props: { pony?: boolean }) {
       <h4>Button pin examples</h4>
       <div className="catalogue__gallery">
         <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/pins/buttons.jpg"></img>
+          <LightboxImage
+            src="https://data.nighty.cloud/artshop/pins/buttons.jpg"
+            alt="Assorted button pins (designs by hioshiru, Hority, PunkPega, Lightly-San)"
+            caption="Various buttons (designs by hioshiru, Hority, PunkPega, Lightly-San)"
+            loading="lazy"
+          />
           <span>Various buttons (designs by hioshiru, Hority, PunkPega, Lightly-San)</span>
         </div>
       </div>

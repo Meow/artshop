@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { LightboxImage } from './lightbox';
 
 interface ArtistProps {
   name: string;
@@ -67,6 +68,7 @@ export default function Artist({ name, artistid, filekey, keymax, extension, sho
     if (!import.meta.env.SSR && window.screen.width <= 600) {
       return (
         <div className="mobile_hint">
+          <i className="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
           <span>Swipe left/right to view more</span>
         </div>
       );
@@ -89,9 +91,11 @@ export default function Artist({ name, artistid, filekey, keymax, extension, sho
       <div className="artist__gallery" id={artistid}>
         {[...Array(keymax)].map((_, i) => (
           <div key={i} className="artist__gallery__media">
-            <img
+            <LightboxImage
               src={`https://data.nighty.cloud/artshop/medium/${filekey}_${keymax - i}.${extension || 'png'}`}
-              alt={`Art ID ${filekey}_${keymax - i}`}
+              alt={`Art by ${name} (ID ${filekey}_${keymax - i})`}
+              caption={showid ? `${name} — ID: ${filekey}_${keymax - i}` : name}
+              loading="lazy"
             />
             <div className={`artist__gallery__badge ${showid ? '' : 'hidden'}`}>
               ID: {filekey}_{keymax - i}

@@ -3,7 +3,6 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import express from 'express';
 import type { Request, Response } from 'express';
-import { createServer as createViteServer } from 'vite';
 import type { ViteDevServer } from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -17,6 +16,7 @@ async function createServer() {
   let vite: ViteDevServer | undefined;
 
   if (!isProduction) {
+    const { createServer: createViteServer } = await import('vite');
     vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'custom',

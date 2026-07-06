@@ -3,14 +3,24 @@
   flex-flow: row;
   align-items: center;
   gap: var(--padding-normal);
-}
-
-.about__person {
+  width: fit-content;
+  margin: var(--padding-large) 0 var(--padding-small);
+  padding: var(--padding-small) var(--padding-large) var(--padding-small) var(--padding-small);
+  background: var(--surface-color);
+  border: 1px solid var(--border-muted-color);
+  border-radius: var(--border-radius-pill);
+  box-shadow: var(--content-shadow);
   font-size: 1.2em;
+  font-weight: 600;
+  color: var(--heading-color);
 }
 
 .about__title {
-  font-size: 1.2em;
+  display: block;
+  margin-top: var(--padding-large);
+  font-size: 1.25em;
+  font-weight: 650;
+  color: var(--heading-color);
 }
 
 .about__artist_list {

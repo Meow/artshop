@@ -14,7 +14,9 @@ export default function NsfwWarning() {
       </span>
       <br />
       <div className="nsfw_warning__buttons">
-        <Link to="/catalogue">‹ Go back</Link>
+        <Link to="/catalogue">
+          <i className="fa-solid fa-arrow-left" aria-hidden="true"></i>Go back
+        </Link>
         <button
           onClick={() => {
             localStorage.setItem('nsfw_allowed', 'yes');
@@ -24,7 +26,7 @@ export default function NsfwWarning() {
             }
           }}
         >
-          Proceed ✔
+          Proceed<i className="fa-solid fa-check" aria-hidden="true"></i>
         </button>
       </div>
     </div>

@@ -1,10 +1,17 @@
+/* Fontawesome icons */
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+
 /* Basic measurements */
+@import "./colors.css";
 @import "./measurements.css";
 
 /* Components */
-@import "./about.css";
-@import "./artists.css";
 @import "./base.css";
-@import "./catalogue.css";
 @import "./navigation.css";
+@import "./catalogue.css";
+@import "./artists.css";
+@import "./about.css";
 @import "./nsfw.css";
+@import "./lightbox.css";

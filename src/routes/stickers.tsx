@@ -1,3 +1,7 @@
+import { LightboxImage } from './components/lightbox';
+
+const FURRY_SHEETS = ['red', 'blue', 'yellow', 'green', 'cyan', 'pink'];
+
 export default function Stickers(_props: { pony?: boolean }) {
   return (
     <div className="catalogue">
@@ -15,30 +19,21 @@ export default function Stickers(_props: { pony?: boolean }) {
       </p>
       <h3>Furry sticker sheets</h3>
       <div className="catalogue__gallery">
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/red.jpg"></img>
-          <span>Red (design by hioshiru)</span>
-        </div>
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/blue.jpg"></img>
-          <span>Blue (design by hioshiru)</span>
-        </div>
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/yellow.jpg"></img>
-          <span>Yellow (design by hioshiru)</span>
-        </div>
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/green.jpg"></img>
-          <span>Green (design by hioshiru)</span>
-        </div>
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/cyan.jpg"></img>
-          <span>Cyan (design by hioshiru)</span>
-        </div>
-        <div className="catalogue__imgcard">
-          <img src="https://data.nighty.cloud/artshop/stickers/pink.jpg"></img>
-          <span>Pink (design by hioshiru)</span>
-        </div>
+        {FURRY_SHEETS.map(color => {
+          const label = color.charAt(0).toUpperCase() + color.slice(1);
+          const caption = `${label} (design by hioshiru)`;
+          return (
+            <div key={color} className="catalogue__imgcard">
+              <LightboxImage
+                src={`https://data.nighty.cloud/artshop/stickers/${color}.jpg`}
+                alt={`${label} sticker sheet (design by hioshiru)`}
+                caption={caption}
+                loading="lazy"
+              />
+              <span>{caption}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -3,10 +3,11 @@ export default function Contact() {
     <div className="about">
       <h1>Contact us</h1>
       <p>
-        Please message Nighty on Telegram if you'd like to get in touch with us: <strong>@Nighty_Cloud</strong>
+        <i className="fa fab fa-telegram" aria-hidden="true"></i> Please message Nighty on Telegram if you'd like to get
+        in touch with us: <strong>@Nighty_Cloud</strong>
       </p>
       <p>
-        Don't have Telegram? You may also send us an E-Mail:{' '}
+        <i className="fa fas fa-envelope" aria-hidden="true"></i> Don't have Telegram? You may also send us an E-Mail:{' '}
         <strong>
           artshop <em>[at]</em> nighty <em>[dot]</em> cloud
         </strong>
