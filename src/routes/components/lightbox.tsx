@@ -133,10 +133,7 @@ function LightboxOverlay({ image, onClose }: { image: LightboxImageData; onClose
 
   return (
     <div className="lightbox" role="dialog" aria-modal="true" aria-label={image.alt} onClick={onClose}>
-      <button className="lightbox__close" type="button" aria-label="Close image" onClick={onClose} autoFocus>
-        <i className="fa-solid fa-xmark" aria-hidden="true"></i>
-      </button>
-      <figure className="lightbox__figure" onClick={e => e.stopPropagation()}>
+      <figure className="lightbox__figure">
         <img ref={imgRef} className="lightbox__image" src={image.src} alt={image.alt} />
         {image.caption && <figcaption className="lightbox__caption">{image.caption}</figcaption>}
       </figure>

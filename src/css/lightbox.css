@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-large);
-  cursor: zoom-out;
+  cursor: pointer;
   background: color-mix(in srgb, var(--background-color) 78%, transparent);
   backdrop-filter: blur(14px);
   animation: lightbox-fade var(--transition-normal) ease;

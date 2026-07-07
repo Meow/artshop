@@ -73,7 +73,7 @@
   max-width: calc(100vw - var(--padding-large) * 2);
   border-radius: calc(var(--border-radius) - 0.2rem);
   object-fit: cover;
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .catalogue__imgcard > span {
