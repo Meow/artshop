@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["dist"],
+  "plugins": ["eslint", "typescript", "oxc", "unicorn", "react"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "builtin": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/exhaustive-deps": "error",
+    "react/rules-of-hooks": "error",
+    "react/jsx-no-target-blank": "off",
+    // Prose in these pages is full of apostrophes; escaping them hurts readability.
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
