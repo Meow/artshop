@@ -6,7 +6,10 @@ import type { Request, Response } from 'express';
 import type { ViteDevServer } from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production' || process.argv.includes('--production');
+
+// express reads NODE_ENV directly, so keep it in sync when started with --production
+if (isProduction) process.env.NODE_ENV = 'production';
 
 type RenderFn = (req: Request, res: Response) => Promise<string>;
 

@@ -8,13 +8,12 @@
     "build": "npm run build:server && npm run build:client",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.tsx",
     "build:client": "vite build --outDir dist/client --ssrManifest",
-    "start": "cross-env NODE_ENV=production node server.ts",
+    "start": "node server.ts --production",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --report-unused-disable-directives --max-warnings 0",
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "cross-env": "^10.1.0",
     "express": "^5.2.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

@@ -11,8 +11,9 @@ export default function Artists() {
       <span className="disclaimer">
         (Many more artists available in the full catalogue, as well as many more arts from these artists)
       </span>
-      <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={47} />
+      <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={57} />
       <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={37} />
+      <Artist name={'Tatujapa'} artistid={'tatujapa'} filekey={'tasf'} keymax={7} />
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} />
