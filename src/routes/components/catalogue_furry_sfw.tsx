@@ -5,8 +5,9 @@ export default function CatalogueFurrySFW() {
     <div className="artists">
       <h2>Furry Prints</h2>
       <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={57} showid={true} />
-      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={37} showid={true} />
+      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={49} showid={true} />
       <Artist name={'Tatujapa'} artistid={'tatujapa'} filekey={'tasf'} keymax={7} showid={true} />
+      <Artist name={'Nevobaster'} artistid={'nebobaster'} filekey={'nsf'} keymax={6} showid={true} />
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} showid={true} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} showid={true} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} showid={true} />

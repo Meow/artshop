@@ -12,8 +12,9 @@ export default function Artists() {
         (Many more artists available in the full catalogue, as well as many more arts from these artists)
       </span>
       <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hsf'} keymax={57} />
-      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={37} />
+      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ysf'} keymax={49} />
       <Artist name={'Tatujapa'} artistid={'tatujapa'} filekey={'tasf'} keymax={7} />
+      <Artist name={'Nevobaster'} artistid={'nebobaster'} filekey={'nsf'} keymax={6} />
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} />
@@ -22,7 +23,7 @@ export default function Artists() {
       <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} />
       <h2>Pony-only artists (not present at furry conventions):</h2>
-      <Artist name={'JedaySkayVoker'} artistid={'jedayskayvoker'} filekey={'jsp'} keymax={13} />
+      <Artist name={'JedaySkayVoker'} artistid={'jedayskayvoker'} filekey={'jsp'} keymax={23} />
       <Artist name={'Setharu'} artistid={'setharu'} filekey={'ssp'} keymax={14} />
     </div>
   );

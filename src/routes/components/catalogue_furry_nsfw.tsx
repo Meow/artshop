@@ -5,8 +5,9 @@ export default function CatalogueFurryNSFW() {
     <div className="artists">
       <h2>NSFW Furry Prints</h2>
       <Artist name={'Hioshiru'} artistid={'hioshiru'} filekey={'hnf'} keymax={140} showid={true} />
-      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ynf'} keymax={36} showid={true} />
+      <Artist name={'Yakovlev-Vad'} artistid={'yakovlev-vad'} filekey={'ynf'} keymax={37} showid={true} />
       <Artist name={'Tatujapa'} artistid={'tatujapa'} filekey={'tanf'} keymax={1} showid={true} />
+      <Artist name={'Nevobaster'} artistid={'nebobaster'} filekey={'nnf'} keymax={15} showid={true} />
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'anf'} keymax={10} showid={true} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'pnf'} keymax={9} showid={true} />
       <Artist name={'Twiren'} artistid={'twiren'} filekey={'tnf'} keymax={12} showid={true} />
