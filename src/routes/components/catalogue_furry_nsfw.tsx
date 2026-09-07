@@ -12,7 +12,7 @@ export default function CatalogueFurryNSFW() {
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'pnf'} keymax={9} showid={true} />
       <Artist name={'Twiren'} artistid={'twiren'} filekey={'tnf'} keymax={12} showid={true} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lnf'} keymax={8} showid={true} />
-      <Artist name={'Upiter'} artistid={'upiter'} filekey={'unf'} keymax={8} showid={true} />
+      <Artist name={'UP1TER'} artistid={'upiter'} filekey={'unf'} keymax={8} showid={true} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vnf'} keymax={4} showid={true} />
       <Artist name={'Hority'} artistid={'hority'} filekey={'honf'} keymax={5} showid={true} />
     </div>

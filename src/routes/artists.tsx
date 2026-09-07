@@ -18,7 +18,7 @@ export default function Artists() {
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} />
-      <Artist name={'Upiter'} artistid={'upiter'} filekey={'usf'} keymax={4} />
+      <Artist name={'UP1TER'} artistid={'upiter'} filekey={'usf'} keymax={4} />
       <Artist name={'Twiren'} artistid={'twiren'} filekey={'tsf'} keymax={2} />
       <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} />

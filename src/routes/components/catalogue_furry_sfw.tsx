@@ -11,7 +11,7 @@ export default function CatalogueFurrySFW() {
       <Artist name={'Airfly-Pony'} artistid={'airfly-pony'} filekey={'asf'} keymax={10} showid={true} />
       <Artist name={'PunkPega'} artistid={'punkpega'} filekey={'psf'} keymax={14} showid={true} />
       <Artist name={'Lightly-San'} artistid={'lightly'} filekey={'lsf'} keymax={4} showid={true} />
-      <Artist name={'Upiter'} artistid={'upiter'} filekey={'usf'} keymax={4} showid={true} />
+      <Artist name={'UP1TER'} artistid={'upiter'} filekey={'usf'} keymax={4} showid={true} />
       <Artist name={'Twiren'} artistid={'twiren'} filekey={'tsf'} keymax={2} showid={true} />
       <Artist name={'Hority'} artistid={'hority'} filekey={'hosf'} keymax={5} showid={true} />
       <Artist name={'Vistamage'} artistid={'vistamage'} filekey={'vsf'} keymax={1} showid={true} />
